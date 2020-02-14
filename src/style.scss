@@ -1,0 +1,205 @@
+$bg-color: #2c2c2c;
+$bg-nav: #f7f3e7;
+$main-blue: #f7f3e7;
+$border-section: #606060;
+$orange: #fa9c00;
+$light-orange: #fa9c00b8;
+$beige-color: #f7f3e7;
+$bg-block: #343434;
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: #222222;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #ffffff;
+}
+
+.page__block {
+  background-color: #303030;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.page__block_with-border {
+  border: 1px solid #444;
+}
+
+.page__block_without-paddings {
+  padding: 0;
+}
+
+.main {
+  padding: 33px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.metabar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.scope {
+  display: flex;
+  flex-direction: row;
+
+  span {
+    margin-left: 5px;
+  }
+}
+
+.text {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+
+.text-small {
+  font-size: 1rem;
+}
+
+.logo {
+  display: flex;
+  background-image: url('https://birds-quiz.netlify.com/static/media/logo.4f82cd73.svg');
+  width: 200px;
+  height: 55px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #008966;
+  justify-content: space-around;
+  padding: 0;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  li {
+    flex: auto;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+
+    &.active {
+      background: #00bc8c;
+    }
+  }
+}
+
+.image {
+  width: 200px;
+  height: 155px;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.audio-block {
+  margin-left: 40px;
+  flex: 1 1 auto;
+
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #96938C;
+  }
+}
+
+.audio-player {
+  margin: 10px 40px 8px 0;
+  width: 100%;
+  min-width: 100px;
+}
+
+.play-button {
+  display: flex;
+  align-items: center;
+  transition: .2s;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #00bc8c;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+
+  svg {
+    transition: .2s;
+    width: 18px;
+    height: 18px;
+    color: #54b1c1;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.options-list__item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: #303030;
+  border-bottom: 1px solid #444;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.options-list__btn {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+  border-radius: 50%;
+  -webkit-transition: .1s;
+  transition: .1s;
+  background-color: #444;
+}
+
+.options-list__btn_error {
+  background-color: #d62c1a;
+}
+
+.options-list__btn_success {
+  background-color: #00bc8c;
+}
+
+
+.text-placeholder {
+  align-items: center;
+  flex-direction: column;
+}
