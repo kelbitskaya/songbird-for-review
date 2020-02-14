@@ -1,0 +1,68 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.metabar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+
+.scope {
+  display: flex;
+  flex-direction: row;
+  color: $main-blue;
+
+  span {
+    margin-left: 5px;
+  }
+}
+
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid $light-orange;
+  justify-content: space-around;
+  padding: 0;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  li {
+    flex: auto;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+
+    a {
+      color: $light-orange;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    &.active {
+      a {
+        color: $orange;
+        border-bottom: 2px solid;
+        padding: 5px;
+      }
+
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  background-image: url('https://dewey.tailorbrands.com/production/brand_version_mockup_image/134/2633569134_ecf6c612-45a3-4eb8-a41f-3c066a463339.png?cb=1581191564');
+  width: 200px;
+  height: 55px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
